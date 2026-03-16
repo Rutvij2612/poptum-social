@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poptum Social</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#ffffff;   /* white so logo blends */
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:100vh;
+padding:30px;
+}
+
+.wrapper{
+text-align:center;
+width:100%;
+max-width:650px;
+}
+
+/* Logo */
+
+.logo{
+width:280px;
+max-width:80%;
+margin-bottom:45px;
+}
+
+/* Social grid */
+
+.container{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:28px;
+}
+
+/* Social cards */
+
+.social{
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:65px;
+padding:35px;
+border-radius:16px;
+text-decoration:none;
+transition:all 0.25s ease;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Hover animation */
+
+.social:hover{
+transform:translateY(-6px) scale(1.05);
+box-shadow:0 14px 28px rgba(0,0,0,0.15);
+}
+
+/* Platform colors */
+
+.instagram{
+background:#ffe8ee;
+color:#E4405F;
+}
+
+.linkedin{
+background:#e7f3ff;
+color:#0077B5;
+}
+
+.twitter{
+background:#f0f0f0;
+color:#000000;
+}
+
+.facebook{
+background:#eaf1ff;
+color:#1877F2;
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+
+.logo{
+width:200px;
+margin-bottom:30px;
+}
+
+.container{
+gap:18px;
+}
+
+.social{
+font-size:50px;
+padding:25px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<img src="poptum_logo.png" class="logo" alt="Poptum Logo">
+
+<div class="container">
+
+<a class="social instagram" href="https://www.instagram.com/poptum.in?igsh=dWo4d2k1dHNqZnQ3" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a class="social linkedin" href="https://linkedin.com/company/poptum" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a class="social twitter" href="https://x.com/Poptum_Makhana" target="_blank">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+<a class="social facebook" href="https://www.facebook.com/share/1C1FwCBt7T/" target="_blank">
+<i class="fab fa-facebook"></i>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
