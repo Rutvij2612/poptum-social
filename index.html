@@ -5,91 +5,72 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Poptum Social</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preload" href="poptum_logo.png" as="image">
 
 <style>
 
-*{
-box-sizing:border-box;
-}
+*{box-sizing:border-box;}
 
 body{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#ffffff;   /* white so logo blends */
+font-family:Arial,Helvetica,sans-serif;
+background:#ffffff;
 display:flex;
 align-items:center;
 justify-content:center;
 min-height:100vh;
-padding:30px;
+padding:25px;
 }
 
 .wrapper{
 text-align:center;
 width:100%;
-max-width:650px;
+max-width:600px;
 }
-
-/* Logo */
 
 .logo{
-width:280px;
+width:260px;
 max-width:80%;
-margin-bottom:45px;
+margin-bottom:40px;
 }
 
-/* Social grid */
+/* grid */
 
 .container{
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:28px;
+gap:25px;
 }
 
-/* Social cards */
+/* cards */
 
 .social{
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:65px;
-padding:35px;
+padding:32px;
 border-radius:16px;
 text-decoration:none;
-transition:all 0.25s ease;
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:all .25s ease;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
-/* Hover animation */
+.social svg{
+width:55px;
+height:55px;
+}
 
 .social:hover{
-transform:translateY(-6px) scale(1.05);
-box-shadow:0 14px 28px rgba(0,0,0,0.15);
+transform:translateY(-5px) scale(1.05);
+box-shadow:0 14px 25px rgba(0,0,0,0.15);
 }
 
-/* Platform colors */
+/* colors */
 
-.instagram{
-background:#ffe8ee;
-color:#E4405F;
-}
-
-.linkedin{
-background:#e7f3ff;
-color:#0077B5;
-}
-
-.twitter{
-background:#f0f0f0;
-color:#000000;
-}
-
-.facebook{
-background:#eaf1ff;
-color:#1877F2;
-}
-
-/* Mobile */
+.instagram{background:#ffe8ee;}
+.linkedin{background:#e7f3ff;}
+.twitter{background:#f2f2f2;}
+.facebook{background:#eaf1ff;}
 
 @media (max-width:600px){
 
@@ -98,13 +79,13 @@ width:200px;
 margin-bottom:30px;
 }
 
-.container{
-gap:18px;
+.social{
+padding:24px;
 }
 
-.social{
-font-size:50px;
-padding:25px;
+.social svg{
+width:45px;
+height:45px;
 }
 
 }
@@ -121,19 +102,47 @@ padding:25px;
 <div class="container">
 
 <a class="social instagram" href="https://www.instagram.com/poptum.in?igsh=dWo4d2k1dHNqZnQ3" target="_blank">
-<i class="fab fa-instagram"></i>
+
+<svg viewBox="0 0 24 24" fill="#E4405F">
+<path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 
+5-5V7c0-2.76-2.24-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 
+010-10zm6.5-.88a1.12 1.12 0 11-2.24 0 1.12 1.12 0 
+012.24 0z"/>
+</svg>
+
 </a>
 
 <a class="social linkedin" href="https://linkedin.com/company/poptum" target="_blank">
-<i class="fab fa-linkedin"></i>
+
+<svg viewBox="0 0 24 24" fill="#0077B5">
+<path d="M4.98 3.5C4.98 4.88 3.86 6 2.49 6S0 4.88 
+0 3.5 1.12 1 2.49 1s2.49 1.12 2.49 2.5zM.21 
+8h4.56v14H.21V8zm7.67 0h4.37v1.92h.06c.61-1.16 
+2.09-2.38 4.3-2.38 4.6 0 5.45 3.03 5.45 
+6.97V22h-4.56v-6.64c0-1.58-.03-3.61-2.2-3.61-2.2 
+0-2.53 1.72-2.53 3.49V22H7.88V8z"/>
+</svg>
+
 </a>
 
 <a class="social twitter" href="https://x.com/Poptum_Makhana" target="_blank">
-<i class="fab fa-x-twitter"></i>
+
+<svg viewBox="0 0 24 24" fill="#000">
+<path d="M18.244 2H21l-6.5 7.43L22 22h-6.828l-5.34-7.01L3.5 
+22H1l7-8.02L2 2h6.97l4.83 6.35L18.244 2z"/>
+</svg>
+
 </a>
 
 <a class="social facebook" href="https://www.facebook.com/share/1C1FwCBt7T/" target="_blank">
-<i class="fab fa-facebook"></i>
+
+<svg viewBox="0 0 24 24" fill="#1877F2">
+<path d="M22 12a10 10 0 10-11.5 9.88v-6.99H7.9V12h2.6V9.8c0-2.56 
+1.52-3.98 3.86-3.98 1.12 0 2.3.2 2.3.2v2.53h-1.3c-1.28 
+0-1.68.8-1.68 1.62V12h2.86l-.46 
+2.89h-2.4v6.99A10 10 0 0022 12z"/>
+</svg>
+
 </a>
 
 </div>
